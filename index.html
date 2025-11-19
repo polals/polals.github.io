@@ -4,40 +4,51 @@
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <meta name="514658836268-1vk07upvc2ar6ip7csg7o92en1s0mpaq.apps.googleusercontent.com">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Centra horitzontalment */
-            justify-content: center; /* Centra verticalment */
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f4f4f9;
-        }
-        h2 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            background-color: #d9534f;
-            color: white;
-            transition: background-color 0.3s;
-        }
-        button:hover {
-            background-color: #c9302c;
-        }
-    </style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        /* Fons de color abans del login */
+        background-color: #e0f7fa; /* Un blau cel clar, per exemple */
+    }
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    /* Estil per al títol que apareix abans de logar-se */
+    #titol-inicial {
+        color: #00796b;
+        font-size: 2em;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #d9534f;
+        color: white;
+        transition: background-color 0.3s;
+    }
+    button:hover {
+        background-color: #c9302c;
+    }
+    .g_id_signin {
+        margin-bottom: 10px;
+    }
+</style>
 </head>
 <body>
     <div id="g_id_onload"
         data-client_id="514658836268-1vk07upvc2ar6ip7csg7o92en1s0mpaq.apps.googleusercontent.com"
         data-callback="onSignIn">
     </div>
+    <h2 id="titol-inicial">Aplicació d'Accés Segur</h2>
     <div class="g_id_signin"
         data-type="standard">
     </div>
