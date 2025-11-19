@@ -3,6 +3,35 @@
     <title>Google Sign-In</title>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <meta name="514658836268-1vk07upvc2ar6ip7csg7o92en1s0mpaq.apps.googleusercontent.com">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra horitzontalment */
+            justify-content: center; /* Centra verticalment */
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #d9534f;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #c9302c;
+        }
+    </style>
 </head>
 <body>
     <div id="g_id_onload"
