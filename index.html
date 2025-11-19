@@ -22,12 +22,14 @@
             console.log("514658836268-1vk07upvc2ar6ip7csg7o92en1s0mpaq.apps.googleusercontent.com" + id_token);
             // Quan s'inicia sessió: Mostra el de desconnexió, amaga el d'inici
             document.getElementById('boto-sortir').style.display = 'block';
+            document.getElementById('missatge-benvinguda').style.display = 'block';
             document.querySelector('.g_id_signin').style.display = 'none';
         }
 
         function signOut() {
             // Quan es desconnecta: Amaga el de desconnexió, mostra el d'inici
             document.getElementById('boto-sortir').style.display = 'none';
+            document.getElementById('missatge-benvinguda').style.display = 'none';
             document.querySelector('.g_id_signin').style.display = 'block';
             // Crida a la funció de desconnexió de Google (necessària per a GSI)
             google.accounts.id.disableAutoSelect();
